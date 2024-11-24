@@ -130,6 +130,10 @@
     background-color: #0732a2;
 }
 
+.background-black {
+    background-color: #000000;
+}
+
 .btn-blue {
     background-color: #395da3 !important;
 }
