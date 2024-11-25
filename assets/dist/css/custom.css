@@ -50,7 +50,7 @@
 }
 
 .bg-light {
-    background-image: linear-gradient(90deg, #000000, #0732a2);
+    background-image: linear-gradient(90deg, #000000, #000000);
 }
 
 .nav-link {
@@ -119,7 +119,7 @@
 }
 
 .background-gradient-invert {
-    background-image: linear-gradient(90deg, #000000, #0732a2);
+    background-image: linear-gradient(135deg, #0764A3, #0C07A3, #0732A2, #3F07A3);
 }
 
 .background-gray {
