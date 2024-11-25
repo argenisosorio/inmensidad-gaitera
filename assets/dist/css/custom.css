@@ -50,7 +50,7 @@
 }
 
 .bg-light {
-    background-color: #000000 !important;
+    background-color: #0732a2 !important;
 }
 
 .nav-link {
@@ -59,7 +59,7 @@
 
 .navbar-toggler {
     color: #FFFFFF !important;
-    background-color: #0732a2 !important;
+    background-color: orange !important;
 }
 
 .navbar-text {
