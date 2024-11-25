@@ -152,7 +152,7 @@ hr {
 }
 
 .btn-grad {
-    background-image: linear-gradient(to right, #124485 0%, #1CB5E0  51%, #395da3  100%);
+    background-image: linear-gradient(to right, #124485 0%, gray  51%, #124485  100%);
     padding: 10px 25px;
     text-align: center;
     transition: 0.5s;
@@ -164,7 +164,7 @@ hr {
 
 .btn-grad:hover {
     background-position: right center; /* change the direction of the change here */
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
     border: ridge 1px transparent;
 }
@@ -223,6 +223,20 @@ hr {
     font-family: "OpenSans-SemiBoldItalic";
     src: url("../../fonts/OpenSans-SemiBoldItalic.ttf");
 }
+@font-face {
+    font-family: "OpenSans-SemiBold";
+    src: url("../../fonts/OpenSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: "CustomFont";
+    src: url("../../fonts/Mentalis.otf");
+    /*
+    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+    src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+    */
+}
 .section-1 {
     font-family: "OpenSans-Bold", sans-serif;
 }
@@ -252,6 +266,12 @@ hr {
 }
 .section-10 {
     font-family: "OpenSans-SemiBoldItalic", sans-serif;
+}
+
+.title-font {
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
 }
 
 /*****************/
