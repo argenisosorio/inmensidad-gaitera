@@ -57,6 +57,10 @@
     color: #FFFFFF !important;
 }
 
+.nav-link:hover {
+    border-bottom: solid 1px blue;
+}
+
 .navbar-toggler {
     color: #FFFFFF !important;
     background-color: orange !important;
