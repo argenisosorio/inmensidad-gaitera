@@ -152,7 +152,7 @@ hr {
 }
 
 .btn-grad {
-    background-image: linear-gradient(to right, #124485 0%, gray  51%, #124485  100%);
+    background-image: linear-gradient(to right, #1f1f1f 0%, gray  51%, #1f1f1f  100%);
     padding: 10px 25px;
     text-align: center;
     transition: 0.5s;
@@ -286,6 +286,15 @@ hr {
     .col-4 {
         width: 33.3333%;
     }
+    .title-font {
+        font-size: 4.5rem;
+        /*color: #FFFFFF;*/
+        background: -webkit-linear-gradient(left, #FFFFFF, gray);
+        background: linear-gradient(to right, #FFFFFF, gray); /* versión estándar */
+        -webkit-background-clip: text; /* versión con prefijo */
+        background-clip: text; /* versión estándar */
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 /* Tablets */
@@ -298,6 +307,10 @@ hr {
     }
     .col-4 img {
         width: 100%;
+    }
+    .title-font {
+        font-size: 3rem;
+        color: #FFFFFF;
     }
 }
 
@@ -326,6 +339,10 @@ hr {
     .mapswrapper iframe {
         width: 100%;
         height: auto;
+    }
+    .title-font {
+        font-size: 3rem;
+        color: #FFFFFF;
     }
 }
 
