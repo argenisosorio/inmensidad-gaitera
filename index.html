@@ -110,13 +110,20 @@
                         </a>
                     </div>
                     <div class="col-4">
-                        <img
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img width="80%" class="d-inline-block align-text-top img-zoom" src="assets/img/image-1.webp" alt="Imagen 1" style="border-radius: 12px;">
+                                <img width="80%" class="d-inline-block align-text-top img-zoom" src="assets/img/image-2.webp" alt="Imagen 2" style="border-radius: 12px;">
+                                <img width="80%" class="d-inline-block align-text-top img-zoom" src="assets/img/image-3.webp" alt="Imagen 3" style="border-radius: 12px;">
+                            </div>
+                        </div>
+                        <!--img
                             src="assets/img/image-1.png"
                             alt="image"
                             width="80%"
                             class="d-inline-block align-text-top img-zoom"
                             style="border-radius: 12px;"
-                        >
+                        -->
                     </div>
                     <div class="col-2"></div>
                 </div>
@@ -543,6 +550,24 @@
     <!-- End Footer -->
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const carouselImages = document.querySelector('.carousel-images');
+        const images = document.querySelectorAll('.carousel-images img');
+        const totalImages = images.length;
+
+        let currentIndex = 0;
+
+        function moveCarousel() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            const offset = currentIndex * -100;
+            carouselImages.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Cambiar imagen cada 5 segundos
+        setInterval(moveCarousel, 5000);
+    </script>
+
     <script>
         // Script JavaScript para efecto de aparición
         const sections = document.querySelectorAll('section');
