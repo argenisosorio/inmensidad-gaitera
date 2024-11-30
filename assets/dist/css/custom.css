@@ -393,3 +393,14 @@ section {
     flex-shrink: 0;
     object-fit: cover;
 }
+
+/* Barra de progreso */
+#progressBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px; /* Altura de la barra */
+    background-color: purple; /* Color de la barra */
+    width: 0%; /* Ancho inicial */
+    z-index: 1000; /* Aparece encima de todo */
+}

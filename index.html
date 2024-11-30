@@ -34,6 +34,9 @@
         </style>
     </head>
 <body>
+    <!-- Barra de progreso -->
+    <div id="progressBar"></div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -653,6 +656,29 @@
             }
         },
         "retina_detect": true
+        });
+    </script>
+
+    <script>
+        // Selecciona la barra de progreso
+        const progressBar = document.getElementById('progressBar');
+
+        // Escuchar el evento de scroll
+        window.addEventListener('scroll', () => {
+        // Altura total del documento
+        const scrollHeight = document.documentElement.scrollHeight;
+
+        // Altura visible de la ventana
+        const clientHeight = document.documentElement.clientHeight;
+
+        // Distancia desplazada desde la parte superior
+        const scrollTop = document.documentElement.scrollTop;
+
+        // Calcular el porcentaje de progreso
+        const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
+
+        // Actualizar el ancho de la barra
+        progressBar.style.width = `${scrollPercentage}%`;
         });
     </script>
 </body>
